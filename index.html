@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VUE DISCHI</title>
+
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    
 
+<body>
+    <div id="app">
+        <div id="top">
+            <img src="https://img.icons8.com/clouds/128/000000/spotify.png" />
+        </div>
+
+        <section class="collection">
+            <h1>SPOTIFY</h1>
+            <div class="album" v-for="album in albums">
+                <img :src="album.poster" alt="album poster">
+                <div class="title">{{album.title}}</div>
+                <div class="author">{{album.author}}</div>
+                <div class="year">{{album.year}}</div>
+            </div>
+    </div>
+    </div>
+
+    </section>
+    </div>
+    </div>
+
+    </div>
+
+    <!-- Axios CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
